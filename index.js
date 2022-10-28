@@ -25,4 +25,6 @@ const {
   withdrawHistory
 } = require('./scripts')
 
+// withdraw()
+
 coinInfo('ETH')

@@ -2,6 +2,11 @@ const { Spot } = require('@binance/connector')
 const HttpsProxyAgent = require('https-proxy-agent')
 const httpsAgent = new HttpsProxyAgent('http://127.0.0.1:7890')
 
+// OnlyRead
+// const apiKey = ''
+// const apiSecret = ''
+
+// Withdraw
 const apiKey = ''
 const apiSecret = ''
 
