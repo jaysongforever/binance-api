@@ -23,7 +23,9 @@ const withdraw = async() => {
         }
       )
       client.logger.log(response.data)
-      sleep(random.int(8 * 60, 20 * 60) * 1000)
+      const timeInterval = random.int(8 * 60, 20 * 60)
+      console.log('Now time:', new Date(), 'TimeInterval:', (timeInterval / 60).toFixed(2), 'Index:', i+1)
+      sleep(timeInterval * 1000)
     } catch (error) {
       client.logger.error(error)
     }
